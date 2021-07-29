@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
-import './App.css'
+import React from 'react'  ;
+import ReactPlayer from 'react-player';
+import './App.css';
 
 
-function App() {
+function Video() {
     return (
 
         <div className='App'>
-            <ReactPlayer>
+            <ReactPlayer
                 width='480px'
                 heigth ='240px'
                 controls
@@ -17,7 +17,7 @@ function App() {
                 onPause={() => console.log('onPause callback')}
                 onEnded={() => console.log('onEnded callback')}
                 onError={() => console.log('onError callback')}
-
+            >
             </ReactPlayer>
 
         </div>
@@ -26,4 +26,4 @@ function App() {
 
     );
 }
-export default App;
+export default Video;
